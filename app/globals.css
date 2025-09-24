@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+.custom-rounded-section {
+  border-radius: 31% 30% 27% 24% / 39% 37% 42% 42%;
+  overflow: hidden;
+}
