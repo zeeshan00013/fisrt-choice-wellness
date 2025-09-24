@@ -69,11 +69,7 @@ const services = [
 
 export default function Team() {
   return (
-    <>
-      <Head>
-        <title>Our Team</title>
-      </Head>
-
+    <div>
       {/* Top Banner Image */}
       <div className="relative w-full h-[300px] md:h-[400px] lg:h-[500px]">
         <Image
@@ -126,6 +122,6 @@ export default function Team() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
