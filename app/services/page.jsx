@@ -20,12 +20,12 @@ const services = [
   { name: "Annual Physical Examination", path: "/annual-physical" },
   {
     name: "Preoperative Evaluation",
-    path: "/services/preoperative-evaluation",
+    path: "/preoperative-evaluation",
   },
-  { name: "Wound Care", path: "/services/wound-care" },
+  { name: "Wound Care", path: "/wound-care" },
   {
     name: "Common Vaccine for Health Needs",
-    path: "/services/common-vaccines",
+    path: "/common-vaccines",
   },
 ];
 
