@@ -3,18 +3,30 @@ import Head from "next/head";
 import Link from "next/link";
 
 const services = [
-  "Management of Medical Conditions",
-  "Hypertension Management",
-  "Weight Loss/Weight Management",
-  "Sick Visits",
-  "Sports Physical",
-  "Medication Refill",
-  "Men Health Services",
-  "Primary Healthcare",
-  "Annual Physical Examination",
-  "Preoperative Evaluation",
-  "Wound Care",
-  "Common Vaccine for Health Needs",
+  {
+    name: "Management of Medical Conditions",
+    path: "/management-of-medical-conditions",
+  },
+  {
+    name: "Hypertension Management",
+    path: "/hypertension-management",
+  },
+  { name: "Weight Loss/Weight Management", path: "/weight-loss" },
+  { name: "Sick Visits", path: "/sick-visits" },
+  { name: "Sports Physical", path: "/sports-physical" },
+  { name: "Medication Refill", path: "/medication-refill" },
+  { name: "Men Health Services", path: "/men-health" },
+  { name: "Primary Healthcare", path: "/primary-healthcare" },
+  { name: "Annual Physical Examination", path: "/annual-physical" },
+  {
+    name: "Preoperative Evaluation",
+    path: "/services/preoperative-evaluation",
+  },
+  { name: "Wound Care", path: "/services/wound-care" },
+  {
+    name: "Common Vaccine for Health Needs",
+    path: "/services/common-vaccines",
+  },
 ];
 
 export default function Services() {
@@ -50,12 +62,11 @@ export default function Services() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
             {services.map((service, index) => (
-              <div
-                key={index}
-                className="bg-[#1C2A64] hover:bg-[#142c8b] cursor-pointer text-white text-center px-6 py-8 rounded-lg shadow-md hover:scale-[1.02] transition-transform"
-              >
-                {service}
-              </div>
+              <Link key={index} href={service.path}>
+                <div className="bg-[#1C2A64] hover:bg-[#142c8b] cursor-pointer text-white text-center px-6 py-8 rounded-lg shadow-md hover:scale-[1.02] transition-transform">
+                  {service.name}
+                </div>
+              </Link>
             ))}
           </div>
         </div>
