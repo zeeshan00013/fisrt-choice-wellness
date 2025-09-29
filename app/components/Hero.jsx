@@ -28,7 +28,7 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="absolute bottom-10  left-[48%] transform -translate-x-1/2 w-36 h-36 bg-white rounded-full shadow-lg flex flex-col items-center justify-center text-center z-20">
+        <div className="absolute bottom-28  -right-[15%] transform -translate-x-1/2 w-36 h-36 bg-white rounded-full shadow-lg flex flex-col items-center justify-center text-center z-20">
           <div className="text-blue-800">
             <FaPeopleGroup size={50} />
           </div>

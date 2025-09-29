@@ -1,95 +1,92 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
+import bannerImg from "../Images/sports.jpg";
 
 export default function SportsPhysicalPage() {
   return (
-    <main className="min-h-screen bg-white text-gray-800 px-4 sm:px-6 lg:px-20 py-10">
-      {/* Page Heading */}
-      <h1 className="text-3xl sm:text-4xl font-bold text-[#1C2D5A] mb-6 border-b-2 border-gray-300 pb-2">
-        Sports Physical
-      </h1>
+    <main className="min-h-screen bg-white text-gray-800">
+      <Image
+        src={bannerImg}
+        alt="Services Banner"
+        className="w-full md:h-[500px] md:object-cover"
+        priority
+      />
 
-      {/* Main Content */}
-      <section className="max-w-4xl space-y-6">
-        <h2 className="text-xl sm:text-2xl font-semibold text-gray-900">
-          Get cleared to play with confidence and care.
+      <div className="bg-[#1C2A64] py-6">
+        <h1 className="text-white text-center text-3xl md:text-5xl">
+          Sports Physical
+        </h1>
+      </div>
+
+      <div className="max-w-7xl mx-auto space-y-6 mt-5 w-full px-8">
+        <div className="border-b border-dashed py-4 text-xl">
+          <Link
+            href="/"
+            className="hover:underline text-[#031869] font-semibold"
+          >
+            Home
+          </Link>{" "}
+          &raquo;{" "}
+          <Link
+            href="/services"
+            className="hover:underline text-[#031869] font-semibold"
+          >
+            Services
+          </Link>{" "}
+          &raquo; <span className="text-gray-950 ">Sports Physical</span>
+        </div>
+      </div>
+
+      {/* Main content */}
+      <section className="max-w-7xl mx-auto space-y-6 mt-5 w-full px-8">
+        <h2 className="text-xl sm:text-3xl font-medium text-gray-900 text-center">
+          Ensure your readiness and safety with thorough evaluations.
         </h2>
 
-        <p>
-          Participating in sports is a great way to stay active and healthy, but
-          ensuring you're physically ready is just as important. At{" "}
+        <p className="text-lg text-black font-[400]">
+          We offer comprehensive sports physicals to ensure that athletes of all
+          ages are fit and ready to participate in their chosen sports safely.
+          These evaluations help identify any potential health concerns that
+          could affect performance or lead to injury, providing peace of mind
+          for both athletes and their families. Our experienced healthcare team
+          conducts thorough assessments, including a detailed medical history
+          review and physical examination, tailored to the specific demands of
+          each sport. We aim to equip young athletes with the guidance and
+          support they need to excel while prioritizing their health.
+        </p>
+
+        <p className="text-lg text-black font-[400]">
+          Our sports physicals assess fitness and educate athletes on injury
+          prevention, nutrition, and overall well-being. We encourage open
+          communication, allowing athletes to discuss concerns or questions
+          regarding their health and sports participation. With flexible
+          scheduling options, we make getting the necessary evaluation easy
+          before the season starts. At
           <span className="font-semibold text-[#1C2D5A]">
-            First Choice Wellness Clinic
+            First Choice Wellness Clinic.
           </span>
-          , we provide thorough and convenient sports physicals for athletes of
-          all ages, from school-age children to adults.
+          we are committed to fostering a safe and healthy sports experience for
+          all athletes, empowering them to pursue their passions confidently.
         </p>
-
-        <p>
-          Our exams are designed to meet school, league, or team requirements
-          while also identifying any underlying health conditions that may
-          affect athletic performance or safety. We make the process simple,
-          fast, and stress-free so you can get back to doing what you love—
-          safely.
-        </p>
-
-        {/* Services */}
-        <div>
-          <h3 className="text-lg sm:text-xl font-semibold text-[#1C2D5A] mb-2">
-            What’s Included in a Sports Physical:
-          </h3>
-
-          {/* Service 1 */}
-          <div className="mb-4">
-            <h4 className="text-md sm:text-lg font-bold text-gray-800">
-              › Comprehensive Health History Review
-            </h4>
-            <p className="text-gray-700 mt-1">
-              We review your personal and family medical history to assess any
-              risks or past issues that could impact safe participation.
-            </p>
-          </div>
-
-          {/* Service 2 */}
-          <div className="mb-4">
-            <h4 className="text-md sm:text-lg font-bold text-gray-800">
-              › Physical Examination
-            </h4>
-            <p className="text-gray-700 mt-1">
-              Our providers check vital signs, joint function, heart and lung
-              health, vision, and more to ensure you're fit for physical
-              activity.
-            </p>
-          </div>
-
-          {/* Service 3 */}
-          <div className="mb-4">
-            <h4 className="text-md sm:text-lg font-bold text-gray-800">
-              › Completion of Required Forms
-            </h4>
-            <p className="text-gray-700 mt-1">
-              We fill out any necessary school or league documentation during
-              your visit so you can submit it right away.
-            </p>
-          </div>
-        </div>
 
         {/* Contact Section */}
-        <div className="bg-[#F8FAFC] border border-gray-200 p-6 rounded-lg mt-10 shadow-sm">
-          <h4 className="text-lg font-semibold mb-2 text-gray-900">
+        <div className="mt-10">
+          <h4 className="text-md sm:text-2xl font-medium text-black">
             Connect With Us
           </h4>
-          <p className="text-gray-700">
-            Need a sports physical for school, camp, or your team?{" "}
+          <p className="text-lg text-black font-[400] mt-4">
+            Take charge of your health today!
             <Link
               href="/contact"
               className="text-blue-600 hover:underline font-medium"
             >
               Contact us
             </Link>{" "}
-            today to schedule your appointment. We’ll make sure you’re game-day
-            ready!
+            to schedule your appointment and receive compassionate,
+            comprehensive care tailored just for you—don’t wait. Your wellness
+            journey starts now!
           </p>
         </div>
       </section>

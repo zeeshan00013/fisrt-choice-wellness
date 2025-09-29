@@ -1,96 +1,92 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
+import bannerImg from "../Images/primary-health.jpg";
 
 export default function PrimaryHealthcarePage() {
   return (
-    <main className="min-h-screen bg-white text-gray-800 px-4 sm:px-6 lg:px-20 py-10">
-      {/* Page Heading */}
-      <h1 className="text-3xl sm:text-4xl font-bold text-[#1C2D5A] mb-6 border-b-2 border-gray-300 pb-2">
-        Primary Healthcare
-      </h1>
+    <main className="min-h-screen bg-white text-gray-800">
+      <Image
+        src={bannerImg}
+        alt="Services Banner"
+        className="w-full md:h-[500px] md:object-cover"
+        priority
+      />
 
-      {/* Main Content */}
-      <section className="max-w-4xl space-y-6">
-        <h2 className="text-xl sm:text-2xl font-semibold text-gray-900">
-          Your trusted partner for lifelong health and wellness.
+      <div className="bg-[#1C2A64] py-6">
+        <h1 className="text-white text-center text-3xl md:text-5xl">
+          Primary Healthcare
+        </h1>
+      </div>
+
+      <div className="max-w-7xl mx-auto space-y-6 mt-5 w-full px-8">
+        <div className="border-b border-dashed py-4 text-xl">
+          <Link
+            href="/"
+            className="hover:underline text-[#031869] font-semibold"
+          >
+            Home
+          </Link>{" "}
+          &raquo;{" "}
+          <Link
+            href="/services"
+            className="hover:underline text-[#031869] font-semibold"
+          >
+            Services
+          </Link>{" "}
+          &raquo; <span className="text-gray-950 ">Primary Healthcare</span>
+        </div>
+      </div>
+
+      {/* Main content */}
+      <section className="max-w-7xl mx-auto space-y-6 mt-5 w-full px-8">
+        <h2 className="text-xl sm:text-3xl font-medium text-gray-900 text-center">
+          Experience holistic care tailored to your family’s needs.
         </h2>
 
-        <p>
-          At{" "}
+        <p className="text-lg text-black font-[400]">
+          We believe that primary healthcare is the cornerstone of your overall
+          well-being. Our dedicated team of healthcare professionals is
+          committed to providing comprehensive and personalized care for
+          patients of all ages. We focus on preventive services, routine
+          check-ups, and early detection of health issues, ensuring that your
+          health is monitored and maintained effectively. With a compassionate
+          approach, we work closely with you to develop a health plan that
+          addresses your unique needs and lifestyle.
+        </p>
+
+        <p className="text-lg text-black font-[400]">
+          Our primary healthcare services encompass various medical needs, from
+          managing chronic conditions to providing vaccinations and wellness
+          screenings. We prioritize building strong relationships with our
+          patients and fostering open communication and trust to enhance your
+          healthcare experience. Whether you require immediate care or long-term
+          health management, our clinic is equipped to support you every step of
+          the way. At
           <span className="font-semibold text-[#1C2D5A]">
-            First Choice Wellness Clinic
+            First Choice Wellness Clinic.
           </span>
-          , we believe that primary care is the foundation of good health. Our
-          primary healthcare services are designed to provide you with ongoing,
-          comprehensive care that focuses on prevention, early detection, and
-          effective treatment of illnesses and chronic conditions.
+          your health is our priority, and we are here to empower you to live a
+          healthy and fulfilling life. Connect With Us
         </p>
-
-        <p>
-          Whether you’re coming in for a routine checkup, managing a chronic
-          condition, or seeking medical advice, we’re here to build a long-term
-          relationship based on trust, compassion, and personalized care. We
-          take the time to understand your unique health needs and partner with
-          you in every stage of life.
-        </p>
-
-        {/* Services */}
-        <div>
-          <h3 className="text-lg sm:text-xl font-semibold text-[#1C2D5A] mb-2">
-            Our Primary Healthcare Services Include:
-          </h3>
-
-          {/* Service 1 */}
-          <div className="mb-4">
-            <h4 className="text-md sm:text-lg font-bold text-gray-800">
-              › Routine Checkups & Preventive Screenings
-            </h4>
-            <p className="text-gray-700 mt-1">
-              Stay ahead of health issues with regular wellness exams, lab
-              tests, vaccinations, and early screening for chronic diseases.
-            </p>
-          </div>
-
-          {/* Service 2 */}
-          <div className="mb-4">
-            <h4 className="text-md sm:text-lg font-bold text-gray-800">
-              › Diagnosis & Treatment of Acute Illness
-            </h4>
-            <p className="text-gray-700 mt-1">
-              Whether it’s the flu, infections, or unexpected symptoms, we
-              provide timely and effective care to help you recover quickly.
-            </p>
-          </div>
-
-          {/* Service 3 */}
-          <div className="mb-4">
-            <h4 className="text-md sm:text-lg font-bold text-gray-800">
-              › Chronic Disease Management
-            </h4>
-            <p className="text-gray-700 mt-1">
-              We help patients manage ongoing conditions like diabetes,
-              hypertension, and asthma through customized care plans and
-              continuous support.
-            </p>
-          </div>
-        </div>
 
         {/* Contact Section */}
-        <div className="bg-[#F8FAFC] border border-gray-200 p-6 rounded-lg mt-10 shadow-sm">
-          <h4 className="text-lg font-semibold mb-2 text-gray-900">
+        <div className="mt-10">
+          <h4 className="text-md sm:text-2xl font-medium text-black">
             Connect With Us
           </h4>
-          <p className="text-gray-700">
-            Looking for a reliable primary care provider?{" "}
+          <p className="text-lg text-black font-[400] mt-4">
+            Take charge of your health today!
             <Link
               href="/contact"
               className="text-blue-600 hover:underline font-medium"
             >
               Contact us
             </Link>{" "}
-            today to schedule an appointment and take the first step toward
-            lifelong health and wellness.
+            to schedule your appointment and receive compassionate,
+            comprehensive care tailored just for you—don’t wait. Your wellness
+            journey starts now!
           </p>
         </div>
       </section>

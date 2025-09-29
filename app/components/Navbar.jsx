@@ -14,8 +14,14 @@ export default function Navbar() {
       <div className="flex flex-col md:flex-row w-full">
         {/* Logo */}
         <div className="flex items-center justify-between md:justify-center max-w-2xl px-8 py-4">
-          <Image src={logo} width={220} alt="logo" className="object-contain" />
-
+          <Link href={"/"}>
+            <Image
+              src={logo}
+              width={220}
+              alt="logo"
+              className="object-contain"
+            />
+          </Link>
           {/* Mobile Menu Button */}
           <div className="md:hidden">
             <button onClick={() => setMenuOpen(!menuOpen)}>
@@ -32,13 +38,13 @@ export default function Navbar() {
         <div className="hidden md:flex flex-col items-end gap-4 w-full p-4 px-8">
           {/* Top Buttons */}
           <div className="text-white space-x-3">
-            <button className="bg-[#0020a6] py-2 px-4 rounded-2xl text-sm cursor-pointer hover:bg-[#1733a5]">
+            <button className="bg-[#0020a6] py-3 px-6 rounded-2xl  cursor-pointer hover:bg-[#1733a5]">
               Paitent Check In
             </button>
-            <button className="bg-[#0020a6] cursor-pointer hover:bg-[#1733a5] py-2 px-4 rounded-2xl text-sm">
+            <button className="bg-[#0020a6] cursor-pointer hover:bg-[#1733a5] py-3 px-6 rounded-2xl ">
               Book Appointment
             </button>
-            <button className="bg-[#0020a6] cursor-pointer hover:bg-[#1733a5] py-2 px-4 rounded-2xl text-sm">
+            <button className="bg-[#0020a6] cursor-pointer hover:bg-[#1733a5] py-3 px-6 rounded-2xl">
               Call Us
             </button>
           </div>
@@ -54,7 +60,7 @@ export default function Navbar() {
           {/* Navigation */}
           <div className="w-full border-t py-4 border-t-blue-800">
             <nav>
-              <ul className="flex items-center justify-between px-5 text-lg">
+              <ul className="flex items-center justify-between px-5 text-lg font-medium">
                 {" "}
                 <li className="cursor-pointer transition-all duration-500 border-b-2 border-transparent hover:border-[#151577] hover:text-blue-900">
                   {" "}
@@ -62,7 +68,7 @@ export default function Navbar() {
                 </li>{" "}
                 <li className="cursor-pointer transition-all duration-500 border-b-2 border-transparent hover:border-[#151577] hover:text-blue-900">
                   {" "}
-                  <Link href={"/about"}>About</Link>{" "}
+                  <Link href={"/about"}>About Us</Link>{" "}
                 </li>{" "}
                 <li className="cursor-pointer transition-all duration-500 border-b-2 border-transparent hover:border-[#151577] hover:text-blue-900">
                   {" "}
@@ -70,15 +76,11 @@ export default function Navbar() {
                 </li>{" "}
                 <li className="cursor-pointer transition-all duration-500 border-b-2 border-transparent hover:border-[#151577] hover:text-blue-900">
                   {" "}
-                  <Link href={"/provider"}>Provider</Link>{" "}
+                  <Link href={"/our-team"}>Our Team</Link>{" "}
                 </li>{" "}
                 <li className="cursor-pointer transition-all duration-500 border-b-2 border-transparent hover:border-[#151577] hover:text-blue-900">
                   {" "}
-                  Our Team{" "}
-                </li>{" "}
-                <li className="cursor-pointer transition-all duration-500 border-b-2 border-transparent hover:border-[#151577] hover:text-blue-900">
-                  {" "}
-                  Careers{" "}
+                  <Link href={"/careers"}>Careers</Link>{" "}
                 </li>{" "}
                 <li className="cursor-pointer transition-all duration-500 border-b-2 border-transparent hover:border-[#151577] hover:text-blue-900s">
                   {" "}

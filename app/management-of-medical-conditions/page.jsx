@@ -1,22 +1,52 @@
 "use client";
 
 import Link from "next/link";
+import bannerImg from "../Images/management-medical.jpg";
+import Image from "next/image";
 
 export default function ManagementOfMedicalConditions() {
   return (
-    <main className="min-h-screen bg-white text-gray-800 px-4 sm:px-6 lg:px-20 py-10">
-      {/* Page Heading */}
-      <h1 className="text-3xl sm:text-4xl font-bold text-[#1C2D5A] mb-6 border-b-2 border-gray-300 pb-2">
-        Management of Medical Conditions
-      </h1>
+    <main className="min-h-screen bg-white text-gray-800 ">
+      <Image
+        src={bannerImg}
+        alt="Services Banner"
+        className="w-full md:h-[500px] md:object-cover"
+        priority
+      />
+      <div className="bg-[#1C2A64] py-6">
+        <h1 className="text-white text-center text-3xl md:text-5xl  ">
+          Management of Medical Conditions
+        </h1>
+      </div>
 
-      {/* Main Content */}
-      <section className="max-w-4xl space-y-6">
-        <h2 className="text-xl sm:text-2xl font-semibold text-gray-900">
+      <div className="max-w-7xl mx-auto space-y-6 mt-5 w-full px-8">
+        <div className="border-b border-dashed py-4 text-xl">
+          <Link
+            href="/"
+            className="hover:underline text-[#031869] font-semibold"
+          >
+            Home
+          </Link>{" "}
+          &raquo;{" "}
+          <Link
+            href="/services"
+            className="hover:underline text-[#031869] font-semibold"
+          >
+            Services
+          </Link>{" "}
+          &raquo;{" "}
+          <span className="text-gray-950 ">
+            Management of Medical Conditions
+          </span>
+        </div>
+      </div>
+      {/* Main Content  */}
+      <section className="max-w-7xl mx-auto space-y-6 mt-5 w-full px-8 ">
+        <h2 className="text-xl sm:text-3xl font-medium text-gray-900 text-center">
           Partner with us for effective chronic condition management.
         </h2>
 
-        <p>
+        <p className="text-lg text-black font-[400]">
           Navigating chronic medical conditions can be daunting. Our
           compassionate team is dedicated to providing comprehensive,
           individualized care that addresses your condition and overall
@@ -27,13 +57,14 @@ export default function ManagementOfMedicalConditions() {
           standard of care that meets your unique needs.
         </p>
 
-        <p>
-          We believe effective management is a partnership built on trust and
-          open communication. Our experienced healthcare providers work closely
-          with you to set achievable health goals, ensuring you feel supported
-          and informed. We offer guidance, resources, and strategies that help
-          you make positive lifestyle changes and manage your condition
-          effectively. At{" "}
+        <p className="text-lg text-black font-[400]">
+          {" "}
+          font We believe effective management is a partnership built on trust
+          and open communication. Our experienced healthcare providers work
+          closely with you to set achievable health goals, ensuring you feel
+          supported and informed. We offer guidance, resources, and strategies
+          that help you make positive lifestyle changes and manage your
+          condition effectively. At{" "}
           <span className="font-semibold text-[#1C2D5A]">
             First Choice Wellness Clinic
           </span>
@@ -44,16 +75,16 @@ export default function ManagementOfMedicalConditions() {
 
         {/* Services */}
         <div>
-          <h3 className="text-lg sm:text-xl font-semibold text-[#1C2D5A] mb-2">
+          <h3 className="text-lg sm:text-2xl font-semibold text-black mb-2">
             We include the following services:
           </h3>
 
           {/* Service 1 */}
           <div className="mb-4">
-            <h4 className="text-md sm:text-lg font-bold text-gray-800">
+            <h4 className="text-md sm:text-2xl font-medium  text-black">
               › Cholesterol Management
             </h4>
-            <p className="text-gray-700 mt-1">
+            <p className="text-lg text-black font-[400] mt-4">
               Managing cholesterol levels is crucial for reducing the risk of
               heart disease and promoting overall health. Our dedicated team
               provides personalized assessments and tailored treatment plans,
@@ -66,10 +97,10 @@ export default function ManagementOfMedicalConditions() {
 
           {/* Service 2 */}
           <div className="mb-4">
-            <h4 className="text-md sm:text-lg font-bold text-gray-800">
+            <h4 className="text-md sm:text-2xl font-medium  text-black">
               › Diabetes
             </h4>
-            <p className="text-gray-700 mt-1">
+            <p className="text-lg text-black font-[400] mt-4">
               At our clinic, we understand that diabetes management requires a
               comprehensive approach to maintain optimal health and well-being.
               Our experienced healthcare providers offer personalized care plans
@@ -82,11 +113,11 @@ export default function ManagementOfMedicalConditions() {
         </div>
 
         {/* Contact Section */}
-        <div className="bg-[#F8FAFC] border border-gray-200 p-6 rounded-lg mt-10 shadow-sm">
-          <h4 className="text-lg font-semibold mb-2 text-gray-900">
+        <div className="  mt-10 ">
+          <h4 className="text-md sm:text-2xl font-medium  text-black">
             Connect With Us
           </h4>
-          <p className="text-gray-700">
+          <p className="text-lg text-black font-[400] mt-4">
             Take charge of your health today!{" "}
             <Link
               href="/contact"

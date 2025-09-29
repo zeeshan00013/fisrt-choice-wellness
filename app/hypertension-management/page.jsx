@@ -1,100 +1,93 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
+import bannerImg from "../Images/hypertension.jpg";
 
 export default function HypertensionManagement() {
   return (
-    <main className="min-h-screen bg-white text-gray-800 px-4 sm:px-6 lg:px-20 py-10">
-      {/* Page Heading */}
-      <h1 className="text-3xl sm:text-4xl font-bold text-[#1C2D5A] mb-6 border-b-2 border-gray-300 pb-2">
-        Hypertension Management
-      </h1>
+    <main className="min-h-screen bg-white text-gray-800">
+      <Image
+        src={bannerImg}
+        alt="Services Banner"
+        className="w-full md:h-[500px] md:object-cover"
+        priority
+      />
 
-      {/* Main Content */}
-      <section className="max-w-4xl space-y-6">
-        <h2 className="text-xl sm:text-2xl font-semibold text-gray-900">
-          Take control of your blood pressure and live healthier.
+      <div className="bg-[#1C2A64] py-6">
+        <h1 className="text-white text-center text-3xl md:text-5xl">
+          Hypertension Management
+        </h1>
+      </div>
+      <div className="max-w-7xl mx-auto space-y-6 mt-5 w-full px-8">
+        <div className="border-b border-dashed py-4 text-xl">
+          <Link
+            href="/"
+            className="hover:underline text-[#031869] font-semibold"
+          >
+            Home
+          </Link>{" "}
+          &raquo;{" "}
+          <Link
+            href="/services"
+            className="hover:underline text-[#031869] font-semibold"
+          >
+            Services
+          </Link>{" "}
+          &raquo;{" "}
+          <span className="text-gray-950 ">Hypertension Management</span>
+        </div>
+      </div>
+      {/* Main content */}
+      <section className="max-w-7xl mx-auto space-y-6 mt-5 w-full px-8">
+        <h2 className="text-xl sm:text-3xl font-medium text-gray-900 text-center">
+          Achieve healthy blood pressure with our expert care.
         </h2>
 
-        <p>
-          High blood pressure, or hypertension, is a common yet serious
-          condition that can lead to heart disease, stroke, kidney issues, and
-          more if left unmanaged. Our experienced team is here to help you
-          effectively monitor and manage your blood pressure with a holistic and
-          patient-centered approach.
+        <p className="text-lg text-black font-[400]">
+          We specialize in the effective management of hypertension, or high
+          blood pressure, a condition that affects millions of individuals and
+          can lead to serious health issues if left uncontrolled. Our
+          experienced healthcare team is dedicated to providing personalized
+          treatment plans that include lifestyle modifications, medication
+          management, and regular monitoring to help you achieve optimal blood
+          pressure levels. We prioritize understanding your unique health
+          circumstances, ensuring our approach is tailored to your needs.
+          Through education and support, we empower you to take an active role
+          in managing your condition.
         </p>
 
-        <p>
-          We offer comprehensive hypertension care that includes regular
-          monitoring, personalized treatment plans, lifestyle counseling, and
-          medication management when necessary. At{" "}
+        <p className="text-lg text-black font-[400]">
+          Our goal is to create a proactive partnership with you to minimize the
+          risks associated with hypertension, such as heart disease and stroke.
+          We offer comprehensive assessments and ongoing evaluations to track
+          your progress and make necessary adjustments to your care plan. By
+          focusing on sustainable lifestyle changes—such as a balanced diet,
+          physical activity, and stress management—we help you build a
+          foundation for long-term health. At
           <span className="font-semibold text-[#1C2D5A]">
-            First Choice Wellness Clinic
+            First Choice Wellness Clinic.
           </span>
-          , we focus on helping you achieve and maintain a healthy blood
-          pressure, reduce your health risks, and improve your overall
-          well-being through sustainable lifestyle changes and compassionate
-          support.
+          your well-being is our top priority, and we are here to support you
+          every step in your journey toward healthier blood pressure management.
         </p>
-
-        {/* Services */}
-        <div>
-          <h3 className="text-lg sm:text-xl font-semibold text-[#1C2D5A] mb-2">
-            Our Hypertension Services Include:
-          </h3>
-
-          {/* Service 1 */}
-          <div className="mb-4">
-            <h4 className="text-md sm:text-lg font-bold text-gray-800">
-              › Blood Pressure Monitoring
-            </h4>
-            <p className="text-gray-700 mt-1">
-              We perform regular and accurate blood pressure monitoring to track
-              your condition and detect any changes early, ensuring timely
-              adjustments in your care plan.
-            </p>
-          </div>
-
-          {/* Service 2 */}
-          <div className="mb-4">
-            <h4 className="text-md sm:text-lg font-bold text-gray-800">
-              › Lifestyle and Nutritional Counseling
-            </h4>
-            <p className="text-gray-700 mt-1">
-              Our team provides personalized counseling on diet, exercise,
-              stress reduction, and other lifestyle habits proven to help lower
-              blood pressure and improve heart health.
-            </p>
-          </div>
-
-          {/* Service 3 */}
-          <div className="mb-4">
-            <h4 className="text-md sm:text-lg font-bold text-gray-800">
-              › Medication Management
-            </h4>
-            <p className="text-gray-700 mt-1">
-              When needed, we prescribe and manage medications tailored to your
-              health status and lifestyle to maintain optimal blood pressure
-              control.
-            </p>
-          </div>
-        </div>
 
         {/* Contact Section */}
-        <div className="bg-[#F8FAFC] border border-gray-200 p-6 rounded-lg mt-10 shadow-sm">
-          <h4 className="text-lg font-semibold mb-2 text-gray-900">
+        <div className="mt-10">
+          <h4 className="text-md sm:text-2xl font-medium text-black">
             Connect With Us
           </h4>
-          <p className="text-gray-700">
-            Ready to manage your blood pressure with confidence?{" "}
+          <p className="text-lg text-black font-[400] mt-4">
+            Take charge of your health today!
             <Link
               href="/contact"
               className="text-blue-600 hover:underline font-medium"
             >
               Contact us
             </Link>{" "}
-            today to book your consultation. We're here to help you live a
-            longer, healthier life through expert hypertension care.
+            to schedule your appointment and receive compassionate,
+            comprehensive care tailored just for you—don’t wait. Your wellness
+            journey starts now!
           </p>
         </div>
       </section>

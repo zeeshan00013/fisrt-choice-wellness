@@ -1,95 +1,90 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
+import bannerImg from "../Images/medical-refill.jpg";
 
 export default function MedicationRefillPage() {
   return (
-    <main className="min-h-screen bg-white text-gray-800 px-4 sm:px-6 lg:px-20 py-10">
-      {/* Page Heading */}
-      <h1 className="text-3xl sm:text-4xl font-bold text-[#1C2D5A] mb-6 border-b-2 border-gray-300 pb-2">
-        Medication Refill
-      </h1>
+    <main className="min-h-screen bg-white text-gray-800">
+      <Image
+        src={bannerImg}
+        alt="Services Banner"
+        className="w-full md:h-[500px] md:object-cover"
+        priority
+      />
 
-      {/* Main Content */}
-      <section className="max-w-4xl space-y-6">
-        <h2 className="text-xl sm:text-2xl font-semibold text-gray-900">
-          Convenient and timely prescription refills you can trust.
+      <div className="bg-[#1C2A64] py-6">
+        <h1 className="text-white text-center text-3xl md:text-5xl">
+          Medication Refill
+        </h1>
+      </div>
+      <div className="max-w-7xl mx-auto space-y-6 mt-5 w-full px-8">
+        <div className="border-b border-dashed py-4 text-xl">
+          <Link
+            href="/"
+            className="hover:underline text-[#031869] font-semibold"
+          >
+            Home
+          </Link>{" "}
+          &raquo;{" "}
+          <Link
+            href="/services"
+            className="hover:underline text-[#031869] font-semibold"
+          >
+            Services
+          </Link>{" "}
+          &raquo; <span className="text-gray-950 ">Medication Refill</span>
+        </div>
+      </div>
+
+      {/* Main content */}
+      <section className="max-w-7xl mx-auto space-y-6 mt-5 w-full px-8">
+        <h2 className="text-xl sm:text-3xl font-medium text-gray-900 text-center">
+          Simplify your healthcare with easy medication refill services.
         </h2>
 
-        <p>
-          Staying consistent with your prescribed medications is essential for
-          managing your health and preventing complications. At{" "}
+        <p className="text-lg text-black font-[400]">
+          Managing your medications is a crucial aspect of your overall health
+          and wellness. Our medication refill service is designed to make the
+          process seamless and convenient, ensuring that you never run out of
+          your essential prescriptions. We prioritize your needs by offering
+          timely refills and easy access to your medication history, allowing
+          for a smooth transition when adjustments are necessary. Our dedicated
+          team assists you with questions or concerns, providing compassionate
+          support throughout your treatment journey.
+        </p>
+
+        <p className="text-lg text-black font-[400]">
+          We emphasize the importance of communication and follow-up to ensure
+          your medications effectively manage your health conditions. If you
+          require a refill or have questions about your current regimen, we
+          encourage you to contact our team for assistance. Our goal is to make
+          the medication refill process as hassle-free as possible, enabling you
+          to focus on what matters most—your health and well-being. At
           <span className="font-semibold text-[#1C2D5A]">
-            First Choice Wellness Clinic
+            First Choice Wellness Clinic.
           </span>
-          , we make medication refills simple, quick, and stress-free—so you
-          never miss a dose.
+          your care is our priority, and we are committed to supporting you
+          every step of the way.
         </p>
-
-        <p>
-          Whether you need a regular refill for a chronic condition or an
-          adjustment to your current prescription, our team is here to help. We
-          ensure each refill is reviewed for safety, accuracy, and alignment
-          with your ongoing treatment plan.
-        </p>
-
-        {/* Services */}
-        <div>
-          <h3 className="text-lg sm:text-xl font-semibold text-[#1C2D5A] mb-2">
-            Our Medication Refill Process Includes:
-          </h3>
-
-          {/* Service 1 */}
-          <div className="mb-4">
-            <h4 className="text-md sm:text-lg font-bold text-gray-800">
-              › Refill Requests & Review
-            </h4>
-            <p className="text-gray-700 mt-1">
-              We process your refill request and verify it against your medical
-              history and treatment goals to ensure continuity of care.
-            </p>
-          </div>
-
-          {/* Service 2 */}
-          <div className="mb-4">
-            <h4 className="text-md sm:text-lg font-bold text-gray-800">
-              › Medication Adjustments (If Needed)
-            </h4>
-            <p className="text-gray-700 mt-1">
-              If your symptoms change or side effects occur, we’ll assess and
-              adjust your medication plan accordingly to best meet your health
-              needs.
-            </p>
-          </div>
-
-          {/* Service 3 */}
-          <div className="mb-4">
-            <h4 className="text-md sm:text-lg font-bold text-gray-800">
-              › Coordination with Your Pharmacy
-            </h4>
-            <p className="text-gray-700 mt-1">
-              We work directly with your preferred pharmacy to ensure your
-              medication is sent out promptly and efficiently—saving you time
-              and hassle.
-            </p>
-          </div>
-        </div>
 
         {/* Contact Section */}
-        <div className="bg-[#F8FAFC] border border-gray-200 p-6 rounded-lg mt-10 shadow-sm">
-          <h4 className="text-lg font-semibold mb-2 text-gray-900">
+        <div className="mt-10">
+          <h4 className="text-md sm:text-2xl font-medium text-black">
             Connect With Us
           </h4>
-          <p className="text-gray-700">
-            Need a medication refill or adjustment?{" "}
+          <p className="text-lg text-black font-[400] mt-4">
+            Take charge of your health today!
             <Link
               href="/contact"
               className="text-blue-600 hover:underline font-medium"
             >
               Contact us
             </Link>{" "}
-            today to request your refill and ensure your treatment stays on
-            track. We're here to help with your ongoing health journey.
+            to schedule your appointment and receive compassionate,
+            comprehensive care tailored just for you—don’t wait. Your wellness
+            journey starts now!
           </p>
         </div>
       </section>

@@ -2,9 +2,9 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import bannerImg from "../Images/wound-care.jpg";
+import bannerImg from "../Images/telehealth.png";
 
-export default function WoundCarePage() {
+export default function Telehealth() {
   return (
     <main className="min-h-screen bg-white text-gray-800">
       <Image
@@ -16,9 +16,10 @@ export default function WoundCarePage() {
 
       <div className="bg-[#1C2A64] py-6">
         <h1 className="text-white text-center text-3xl md:text-5xl">
-          Wound Care
+          Telehealth
         </h1>
       </div>
+
       <div className="max-w-7xl mx-auto space-y-6 mt-5 w-full px-8">
         <div className="border-b border-dashed py-4 text-xl">
           <Link
@@ -34,38 +35,35 @@ export default function WoundCarePage() {
           >
             Services
           </Link>{" "}
-          &raquo; <span className="text-gray-950 ">Wound Care</span>
+          &raquo; <span className="text-gray-950 ">Telehealth</span>
         </div>
       </div>
+
       {/* Main content */}
       <section className="max-w-7xl mx-auto space-y-6 mt-5 w-full px-8">
         <h2 className="text-xl sm:text-3xl font-medium text-gray-900 text-center">
-          Get specialized attention for optimal healing and recovery.
+          Access quality care from home with our telehealth services.
         </h2>
 
         <p className="text-lg text-black font-[400]">
-          Effective wound care is essential for promoting healing and preventing
-          complications. Our skilled team of healthcare professionals is
-          dedicated to providing comprehensive wound management services
-          tailored to your specific needs. We utilize the latest techniques and
-          treatments to ensure wounds heal properly, whether from surgery,
-          injury, or chronic conditions. By taking a holistic approach, we
-          assess the wound and underlying health factors that may impact the
-          healing process.
+          We offer a convenient and secure way to access healthcare from the
+          comfort of your own home. Through virtual visits, our team can assess
+          symptoms, provide consultations, manage medications, and offer
+          follow-up care without needing an in-person visit. This service is
+          ideal for those with busy schedules, mobility challenges, or anyone
+          seeking flexible healthcare options. Our goal is to make high-quality,
+          compassionate care accessible wherever you are.
         </p>
 
         <p className="text-lg text-black font-[400]">
-          Our wound care services include thorough assessments, debridement,
-          dressing changes, and education on proper wound care at home. We
-          prioritize patient comfort and strive to create a supportive
-          environment to empower you to participate in your healing journey.
-          Additionally, we provide guidance on lifestyle modifications and
-          preventive measures to reduce the risk of future wounds. At
-          <span className="font-semibold text-[#1C2D5A]">
-            First Choice Wellness Clinic.
-          </span>
-          our commitment to compassionate care ensures you receive the highest
-          quality of service as you work toward recovery.
+          In addition to convenience, telehealth enables us to deliver timely
+          care and address health concerns efficiently, helping you stay on top
+          of your wellness. Our providers are committed to creating a seamless
+          virtual experience, ensuring you feel heard and supported. From
+          managing chronic conditions to routine check-ups, telehealth allows us
+          to extend our comprehensive care to you, no matter the distance. Reach
+          out to schedule a telehealth appointment and experience quality care
+          made easy.
         </p>
 
         {/* Contact Section */}
