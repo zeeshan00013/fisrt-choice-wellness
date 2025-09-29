@@ -1,9 +1,9 @@
 "use client";
 import { useState, useEffect } from "react";
 import Image from "next/image";
-import img1 from "../Images/ca1.webp";
-import img2 from "../Images/ca2.webp";
-import img3 from "../Images/ca3.webp";
+import img1 from "../Images/ca5.jpg";
+import img2 from "../Images/ca4.jpg";
+import img3 from "../Images/ca3.jpg";
 
 const slides = [
   {
@@ -22,13 +22,13 @@ export default function HomeCarousel() {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrent((prev) => (prev === slides.length - 1 ? 0 : prev + 1));
+      setCurrent((prev) => (prev === slides.length - 2 ? 0 : prev + 1));
     }, 2000); // 1 second
 
     return () => clearInterval(interval);
   }, []);
 
-  const { image, title, desc, button1, button2 } = slides[current];
+  const { image } = slides[current];
 
   return (
     <div className="relative w-full h-[500px] md:h-[550px] overflow-hidden">

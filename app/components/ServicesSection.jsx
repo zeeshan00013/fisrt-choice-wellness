@@ -6,32 +6,38 @@ import img2 from "../Images/btm1-img2.jpg";
 import img3 from "../Images/btm1-img3.jpg";
 import img4 from "../Images/btm1-img4.jpg";
 import img5 from "../Images/btm1-img5.jpg";
+import Link from "next/link";
 
 const services = [
   {
     title: "WEIGHT LOSS",
     desc: "Personalized plans to help you achieve lasting healthy results.",
     img: img4,
+    route: "/weight-loss",
   },
   {
     title: "PHYSICAL (WELLNESS EXAMS)",
     desc: "A physical exam is a routine check-up with your healthcare provider to assess your overall health.",
     img: img1,
+    route: "/annual-physical",
   },
   {
     title: "HYPERTENSION MANAGEMENT",
     desc: "Home monitoring can provide valuable insights into your blood pressure trends.",
     img: img3,
+    route: "/hypertension-management",
   },
   {
     title: "MANAGEMENT OF MEDICAL CONDITIONS",
     desc: "A specialized approach to overseeing and treating chronic illnesses and acute conditions.",
     img: img2,
+    route: "/management-of-medical-conditions",
   },
   {
     title: "VIEW MORE SERVICES",
     desc: "Explore a wider range of services to enhance your experience and support your health journey.",
     img: img5,
+    route: "/services",
   },
 ];
 
@@ -49,15 +55,15 @@ export default function ServicesSection() {
           {services.map((service, i) => (
             <div
               key={i}
-              className="bg-[#0028a5] text-white w-72 px-6 py-8 flex flex-col items-center rounded-[70px] text-center relative"
+              className="bg-[#0028a5] text-white w-72 px-6 py-8 flex flex-col items-center rounded-[70px] text-center relative h-full"
             >
               {/* Image */}
-              <div className=" rounded-full overflow-hidden mb-4">
+              <div className="rounded-full overflow-hidden mb-4">
                 <Image
                   src={service.img}
                   alt={service.title}
-                  width={200}
-                  height={200}
+                  width={300}
+                  height={300}
                   className="object-cover"
                 />
               </div>
@@ -68,14 +74,16 @@ export default function ServicesSection() {
               </h3>
 
               {/* Description */}
-              <p className="text-lg text-gray-100 mb-6 font-[400]">
+              <p className="text-lg text-gray-100 font-[400] mb-6 flex-grow">
                 {service.desc}
               </p>
 
-              {/* Arrow button */}
-              <button className="mt-auto  w-8 h-8 flex items-center cursor-pointer justify-center rounded-full bg-white  text-blue-800">
-                <FaArrowRight size={12} />
-              </button>
+              {/* Arrow button at the end */}
+              <Link href={service.route}>
+                <button className="mt-auto w-10 h-10 flex items-center cursor-pointer justify-center rounded-full bg-white text-blue-800">
+                  <FaArrowRight size={18} />
+                </button>
+              </Link>
             </div>
           ))}
         </div>

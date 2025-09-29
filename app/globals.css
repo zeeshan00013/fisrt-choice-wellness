@@ -4,3 +4,19 @@
   border-radius: 31% 30% 27% 24% / 39% 37% 42% 42%;
   overflow: hidden;
 }
+ 
+@layer utilities {
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  .animate-scroll {
+    animation: scroll 40s linear infinite;
+  }
+}
+

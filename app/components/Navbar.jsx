@@ -17,18 +17,18 @@ export default function Navbar() {
           <Link href={"/"}>
             <Image
               src={logo}
-              width={220}
               alt="logo"
+              height={100}
               className="object-contain"
             />
           </Link>
           {/* Mobile Menu Button */}
-          <div className="md:hidden">
+          <div className="md:hidden pl-2">
             <button onClick={() => setMenuOpen(!menuOpen)}>
               {menuOpen ? (
-                <HiX size={30} className="text-white" />
+                <HiX size={30} className="text-black" />
               ) : (
-                <HiMenu size={30} className="text-white" />
+                <HiMenu size={30} className="text-black" />
               )}
             </button>
           </div>
@@ -50,7 +50,7 @@ export default function Navbar() {
           </div>
 
           {/* Contact Info */}
-          <div className="flex flex-wrap items-center space-x-3 text-sm">
+          <div className="flex flex-wrap items-center space-x-3 ">
             <p className="border-r-2 pr-2">
               Feel free to call us! 682-382-3850
             </p>
@@ -99,7 +99,7 @@ export default function Navbar() {
               <p>Email us at: info@firstchoicewellnessclinic.com</p>
             </div>
 
-            <nav className="mt-4 border-t pt-4 border-blue-800">
+            <nav className="mt-4 border-t pt-4 border-blue-800 text-white">
               <ul className="flex flex-col gap-6">
                 <li className="hover:text-blue-400">
                   <Link href="/">Home</Link>
@@ -110,11 +110,14 @@ export default function Navbar() {
                 <li className="hover:text-blue-400">
                   <Link href="/services">Services</Link>
                 </li>
+
                 <li className="hover:text-blue-400">
-                  <Link href="/provider">Provider</Link>
+                  <Link href="/our-team"> Our Team</Link>
                 </li>
-                <li className="hover:text-blue-400">Our Team</li>
-                <li className="hover:text-blue-400">Careers</li>
+                <li className="hover:text-blue-400">
+                  {" "}
+                  <Link href={"/careers"}>Careers</Link>{" "}
+                </li>
                 <li className="hover:text-blue-400">
                   <Link href="/contact">Contact Us</Link>
                 </li>

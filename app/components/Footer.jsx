@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import logo from "../../public/main-logo.png";
+import logo from "../Images/footerlogo.png";
 import Link from "next/link";
 import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa6";
 import { FaLocationDot } from "react-icons/fa6";
@@ -31,12 +31,8 @@ const Footer = () => {
               </div>
               <div className="mt-4 lg:max-w-sm">
                 <p className="text-sm ">
-                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                  accusantium doloremque laudantium, totam rem aperiam.
-                </p>
-                <p className="mt-4 text-sm ">
-                  Eaque ipsa quae ab illo inventore veritatis et quasi
-                  architecto beatae vitae dicta sunt explicabo.
+                  First Choice Wellness Clinic is committed to providing
+                  top-notch healthcare services tailored to your unique needs.
                 </p>
               </div>
             </div>
@@ -48,7 +44,7 @@ const Footer = () => {
                 <ul className="mt-2 space-y-2">
                   <li>
                     <Link
-                      href="/"
+                      href="/wound-care"
                       className="transition-colors duration-300  hover:text-teal-accent-400 flex  items-center gap-2"
                     >
                       <AiOutlineCaretRight /> Wound Care
@@ -56,7 +52,7 @@ const Footer = () => {
                   </li>
                   <li>
                     <Link
-                      href="/"
+                      href="/sick-visits"
                       className="transition-colors duration-300  hover:text-teal-accent-400 flex items-center gap-2"
                     >
                       <AiOutlineCaretRight /> Sick Visits
@@ -64,7 +60,7 @@ const Footer = () => {
                   </li>
                   <li>
                     <Link
-                      href="/"
+                      href="/primary-healthcare"
                       className="transition-colors duration-300  hover:text-teal-accent-400 flex items-center gap-2"
                     >
                       <AiOutlineCaretRight /> Primary Health
@@ -72,7 +68,7 @@ const Footer = () => {
                   </li>
                   <li>
                     <Link
-                      href="/"
+                      href="/sports-physical"
                       className="transition-colors duration-300  hover:text-teal-accent-400 flex items-center gap-2"
                     >
                       <AiOutlineCaretRight /> Sports Physical
@@ -87,7 +83,7 @@ const Footer = () => {
                 <ul className="mt-2 space-y-2">
                   <li>
                     <Link
-                      href="/"
+                      href="/about"
                       className="transition-colors duration-300  hover:text-teal-accent-400 flex items-center gap-2"
                     >
                       <AiOutlineCaretRight /> About Us
@@ -95,7 +91,7 @@ const Footer = () => {
                   </li>
                   <li>
                     <Link
-                      href="/"
+                      href="/careers"
                       className="transition-colors duration-300  hover:text-teal-accent-400 flex items-center gap-2"
                     >
                       <AiOutlineCaretRight /> Careers
@@ -103,7 +99,7 @@ const Footer = () => {
                   </li>
                   <li>
                     <Link
-                      href="/"
+                      href="/contact"
                       className="transition-colors duration-300  hover:text-teal-accent-400 flex items-center gap-2"
                     >
                       <AiOutlineCaretRight /> Contact Us
@@ -111,7 +107,7 @@ const Footer = () => {
                   </li>
                   <li>
                     <Link
-                      href="/"
+                      href="/our-team"
                       className="transition-colors duration-300  hover:text-teal-accent-400 flex items-center gap-2"
                     >
                       <AiOutlineCaretRight /> Our Team

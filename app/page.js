@@ -3,6 +3,8 @@ import Hero from "./components/Hero";
 import ServicesSection from "./components/ServicesSection";
 import HomeCarousel from "./components/HomeCarousel";
 import WhoWeAre from "./components/WhoWE";
+import InsuranceAccepted from "./components/Insuranace";
+import ContactInfoSection from "./components/Hours";
 
 export default function Home() {
   return (
@@ -11,6 +13,8 @@ export default function Home() {
       <Hero />
       <WhoWeAre />
       <ServicesSection />
+      <InsuranceAccepted />
+      <ContactInfoSection />
     </div>
   );
 }
