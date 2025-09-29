@@ -38,15 +38,21 @@ export default function Navbar() {
         <div className="hidden md:flex flex-col items-end gap-4 w-full p-4 px-8">
           {/* Top Buttons */}
           <div className="text-white space-x-3">
-            <button className="bg-[#0020a6] py-3 px-6 rounded-2xl  cursor-pointer hover:bg-[#1733a5]">
-              Paitent Check In
-            </button>
-            <button className="bg-[#0020a6] cursor-pointer hover:bg-[#1733a5] py-3 px-6 rounded-2xl ">
-              Book Appointment
-            </button>
-            <button className="bg-[#0020a6] cursor-pointer hover:bg-[#1733a5] py-3 px-6 rounded-2xl">
-              Call Us
-            </button>
+            <Link href={"/contact"}>
+              <button className="bg-[#0020a6] py-3 px-6 rounded-2xl  cursor-pointer hover:bg-[#1733a5]">
+                Paitent Check In
+              </button>
+            </Link>
+            <Link href={"/contact"}>
+              <button className="bg-[#0020a6] cursor-pointer hover:bg-[#1733a5] py-3 px-6 rounded-2xl ">
+                Book Appointment
+              </button>
+            </Link>
+            <Link href={"/contact"}>
+              <button className="bg-[#0020a6] cursor-pointer hover:bg-[#1733a5] py-3 px-6 rounded-2xl">
+                Call Us
+              </button>
+            </Link>
           </div>
 
           {/* Contact Info */}
