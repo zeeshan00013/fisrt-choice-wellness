@@ -10,12 +10,12 @@ const WhoWeAre = () => {
       <h1 className="md:text-4xl text-xl font-medium    mb-4 text-black uppercase  max-w-7xl mx-auto text-center ">
         Who we are
       </h1>
-      <p className="text-center text-gray-700 mt-3 mb-8">
+      <p className="text-center text-lg text-black font-[400]">
         The Internal Medical and primary care office.
       </p>
 
       {/* Main Content */}
-      <div className="flex flex-col lg:flex-row gap-8 max-w-6xl w-full">
+      <div className="flex flex-col lg:flex-row gap-8 max-w-6xl w-full mt-6">
         {/* Image */}
         <div className="w-full lg:w-1/2 ">
           <Image
@@ -28,26 +28,25 @@ const WhoWeAre = () => {
         </div>
 
         {/* Text Content */}
-        <div className="w-full lg:w-1/2 text-gray-800 space-y-4 text-sm md:text-base">
-          <p>
-            At Desired Primary Healthcare, we are dedicated to creating a
-            healthier, empowered community by providing accessible,
-            compassionate, and comprehensive care for adults of all ages. Led by
-            Caroline A. Weke, a board-certified Adult-Gerontology Acute Care
-            Nurse Practitioner with over a decade of experience, we focus on
-            building lasting relationships and delivering personalized,
-            evidence-based care.
+        <div className="w-full lg:w-1/2 text-gray-900 space-y-4 ">
+          <p className="text-lg text-black font-[400]">
+            At First Choice Wellness Clinic, your health is our highest
+            priority. We are committed to delivering high-quality,
+            compassionate, and personalized care to adults of all ages. Our goal
+            is to empower individuals to take charge of their wellness through
+            trusted relationships, advanced medical expertise, and a warm,
+            supportive environment.
           </p>
-          <p>
-            From urgent illness management and chronic condition support (such
-            as hypertension and diabetes) to preventive screenings and wellness
-            visits, our services are designed to support lifelong health and
-            well-being.
+          <p className="text-lg text-black font-[400]">
+            Led by a team of experienced healthcare professionals, we provide a
+            wide range of services — from managing chronic conditions like
+            diabetes and high blood pressure, to same-day care for urgent
+            illnesses, preventive screenings, wellness exams, and more.
           </p>
-          <p>
-            We proudly serve adults 18 and older including seniors and medically
-            complex patients with integrity, respect, and a deep commitment to
-            your health journey.
+          <p className="text-lg text-black font-[400]">
+            Whether you're coming in for your first check-up or need ongoing
+            support for a complex condition, we’re here to help you live a
+            healthier, more vibrant life.
           </p>
 
           <Link href={"/contact"}>

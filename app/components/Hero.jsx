@@ -8,7 +8,7 @@ import { FaPeopleGroup } from "react-icons/fa6";
 export default function Hero() {
   return (
     <section className="w-full bg-white py-12 px-6  flex flex-col-reverse lg:flex-row items-center gap-10">
-      <div className="relative w-full lg:w-1/2 flex justify-center">
+      <div className="relative w-full lg:w-1/2 flex justify-between ">
         <Image
           src={doctor}
           alt="Doctor"
@@ -43,19 +43,19 @@ export default function Hero() {
 
       {/* Right text section */}
       <div className="w-full lg:w-1/2">
-        <p className="text-gray-700 text-xl mb-2">Welcome to</p>
-        <h1 className="text-3xl sm:text-4xl font-medium  text-[#0033aa] leading-tight mb-4">
+        <p className="text-gray-700 text-3xl mb-2">Welcome to</p>
+        <h1 className="text-3xl sm:text-5xl font-medium  text-[#0033aa] leading-tight mb-4 w-3/4">
           First Choice Wellness Clinic
         </h1>
 
-        <p className="text-gray-700 mb-4 leading-relaxed text-base">
+        <p className="text-lg text-black font-[400]">
           At <strong>First Choice Wellness Clinic</strong>, we’re committed to
           helping you achieve optimal health and well-being. Our experienced
           team of healthcare professionals is dedicated to providing
           comprehensive, personalized care tailored to your unique needs.
         </p>
 
-        <p className="text-gray-700 text-base leading-relaxed">
+        <p className="text-lg text-black font-[400] mt-3">
           Experience the difference at{" "}
           <strong>First Choice Wellness Clinic</strong>. We prioritize your
           comfort and satisfaction, offering a warm and welcoming environment
