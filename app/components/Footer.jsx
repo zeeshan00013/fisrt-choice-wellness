@@ -136,13 +136,21 @@ const Footer = () => {
                       <FaPhoneAlt /> Direct Line: 682-549-3312
                     </Link>
                   </li>
+                  <li>
+                    <Link
+                      href="/"
+                      className="transition-colors duration-300  hover:text-teal-accent-400 flex items-center gap-2"
+                    >
+                      <FaPhoneAlt /> FAX: 682-382-4082
+                    </Link>
+                  </li>
 
                   <li>
                     <Link
                       href="/"
                       className="transition-colors duration-300  hover:text-teal-accent-400 flex items-center gap-2"
                     >
-                      <IoMdMail /> infofirstchoicewellnessclinic.com
+                      <IoMdMail /> 1stchoicewellnessclinic.com
                     </Link>
                   </li>
                   <li>
@@ -160,7 +168,12 @@ const Footer = () => {
           </div>
           <div className="flex flex-col justify-between pt-5 pb-10 border-t border-deep-purple-accent-200 sm:flex-row">
             <p className="text-sm text-gray-100">
-              © Copyright 2020 First Choice Inc. All rights reserved.
+              © Copyright 2020 First Choice Inc. All rights reserved.{" "}
+              <span>
+                <Link href={"/privacy-policy"} className="underline">
+                  Privacy Policy
+                </Link>
+              </span>
             </p>
             <div className="flex items-center mt-4 space-x-4 sm:mt-0">
               <Link href={""}>

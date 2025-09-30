@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import { FaFacebookF, FaXTwitter } from "react-icons/fa6";
+import { FaFacebook, FaFacebookF, FaXTwitter } from "react-icons/fa6";
 import logo from "../../public/main-logo.png";
 import Link from "next/link";
 import { useState } from "react";
@@ -60,7 +60,15 @@ export default function Navbar() {
             <p className="border-r-2 pr-2">
               Feel free to call us! 682-382-3850
             </p>
-            <p>Email us at: info@firstchoicewellnessclinic.com</p>
+            <p className="border-r-2 pr-2">
+              Email us at: info@firstchoicewellnessclinic.com
+            </p>
+            <div className="flex items-center gap-1">
+              Follow Us:{" "}
+              <span className="flex items-center gap-1">
+                <FaFacebook size={26} /> <FaXTwitter size={26} />{" "}
+              </span>
+            </div>
           </div>
 
           {/* Navigation */}

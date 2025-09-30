@@ -53,9 +53,10 @@ export default function ServicesSection() {
       <div className="w-full  py-12 px-4 md:px-12">
         <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 justify-items-center">
           {services.map((service, i) => (
-            <div
+            <Link
+              href={service.route}
               key={i}
-              className="bg-[#0028a5] text-white w-72 px-6 py-8 flex flex-col items-center rounded-[70px] text-center relative h-full"
+              className="bg-[#0028a5] text-white w-72 px-6 py-8 flex flex-col cursor-pointer hover:transform transition-all hover:scale-95  items-center rounded-[70px] text-center relative h-full"
             >
               {/* Image */}
               <div className="rounded-full overflow-hidden mb-4">
@@ -79,12 +80,11 @@ export default function ServicesSection() {
               </p>
 
               {/* Arrow button at the end */}
-              <Link href={service.route}>
-                <button className="mt-auto w-10 h-10 flex items-center cursor-pointer justify-center rounded-full bg-white text-blue-800">
-                  <FaArrowRight size={18} />
-                </button>
-              </Link>
-            </div>
+
+              <button className="mt-auto w-10 h-10 flex items-center cursor-pointer justify-center rounded-full bg-white text-blue-800">
+                <FaArrowRight size={18} />
+              </button>
+            </Link>
           ))}
         </div>
       </div>

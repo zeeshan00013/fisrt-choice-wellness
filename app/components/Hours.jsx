@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import { FaClock, FaCircle } from "react-icons/fa";
 
 export default function ContactInfoSection() {
@@ -29,9 +30,11 @@ export default function ContactInfoSection() {
             ))}
           </ul>
 
-          <button className="bg-gray-50 hover:bg-gray-100 text-black cursor-pointer font-bold py-3 px-6 rounded w-full md:w-auto">
-            REQUEST AN APPOINTMENT
-          </button>
+          <Link href={"/contact"}>
+            <button className="bg-gray-50 hover:bg-gray-100 text-black cursor-pointer font-bold py-3 px-6 rounded w-full md:w-auto">
+              REQUEST AN APPOINTMENT
+            </button>
+          </Link>
         </div>
 
         {/* Right Column - Map */}
