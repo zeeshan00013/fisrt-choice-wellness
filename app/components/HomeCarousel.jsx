@@ -4,6 +4,8 @@ import Image from "next/image";
 import img1 from "../Images/ca5.jpg";
 import img2 from "../Images/ca4.jpg";
 import img3 from "../Images/ca3.jpg";
+import img4 from "../Images/ca6.jpg";
+import img5 from "../Images/ca7.jpg";
 
 const slides = [
   {
@@ -14,6 +16,12 @@ const slides = [
   },
   {
     image: img3,
+  },
+  {
+    image: img4,
+  },
+  {
+    image: img5,
   },
 ];
 

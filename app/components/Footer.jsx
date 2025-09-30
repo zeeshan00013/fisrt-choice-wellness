@@ -150,7 +150,7 @@ const Footer = () => {
                       href="/"
                       className="transition-colors duration-300  hover:text-teal-accent-400 flex items-center gap-2"
                     >
-                      <IoMdMail /> 1stchoicewellnessclinic.com
+                      <IoMdMail /> info@1stchoicewellnessclinic.com
                     </Link>
                   </li>
                   <li>

@@ -110,7 +110,7 @@ export default function Navbar() {
           <div className="md:hidden flex flex-col gap-4 bg-[#001144] px-6 py-4 text-sm">
             <div className="text-white">
               <p>Feel free to call us! 682-382-3850</p>
-              <p>Email us at: info@firstchoicewellnessclinic.com</p>
+              <p>Email us at: info@1stfirstchoicewellnessclinic.com</p>
             </div>
 
             <nav className="mt-4 border-t pt-4 border-blue-800 text-white">
