@@ -24,13 +24,13 @@ const services = [
     name: "Preoperative Evaluation",
     path: "/preoperative-evaluation",
   },
-  { name: "Wound Care", path: "/wound-care" },
+  { name: "Wellness", path: "/wellness" },
   {
     name: "Common Vaccine for Health Needs",
     path: "/common-vaccines",
   },
   {
-    name: "telehealth",
+    name: "Telehealth",
     path: "/telehealth",
   },
 ];

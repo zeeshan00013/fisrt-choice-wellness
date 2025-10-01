@@ -15,11 +15,11 @@ export default function ContactInfoSection() {
 
           <ul className="space-y-2 mb-8">
             {[
-              { day: "Monday", time: "8am – 5pm" },
-              { day: "Tuesday", time: "8am – 5pm" },
-              { day: "Wednesday", time: "8am – 5pm" },
-              { day: "Thursday", time: "8am – 6pm" },
-              { day: "Friday", time: "8am – 5pm" },
+              { day: "Monday", time: "9am – 5pm" },
+              { day: "Tuesday", time: "9am – 5pm" },
+              { day: "Wednesday", time: "9am – 5pm" },
+              { day: "Thursday", time: "9am – 5pm" },
+              { day: "Friday", time: "9am – 5pm" },
             ].map((item, index) => (
               <li key={index} className="flex items-start gap-3">
                 <FaCircle className="text-cyan-400 text-sm mt-1" />

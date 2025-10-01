@@ -11,7 +11,7 @@ const WhoWeAre = () => {
         Who we are
       </h1>
       <p className="text-center text-lg text-black font-[400]">
-        The Internal Medical and primary care office.
+        The Family Clinic and primary care office.
       </p>
 
       {/* Main Content */}

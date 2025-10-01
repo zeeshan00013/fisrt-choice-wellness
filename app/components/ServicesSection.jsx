@@ -56,7 +56,7 @@ export default function ServicesSection() {
             <Link
               href={service.route}
               key={i}
-              className="bg-[#0028a5] text-white w-72 px-6 py-8 flex flex-col cursor-pointer hover:transform transition-all hover:scale-95  items-center rounded-[70px] text-center relative h-full"
+              className="bg-[#0028a5] text-white w-80 px-6 py-8 flex flex-col cursor-pointer hover:transform transition-all hover:scale-95  items-center rounded-full text-center relative h-full"
             >
               {/* Image */}
               <div className="rounded-full overflow-hidden mb-4">

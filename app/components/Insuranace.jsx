@@ -3,48 +3,29 @@
 import Image from "next/image";
 import { TiTick } from "react-icons/ti";
 
-// Import images
-import atena from "../InsuranceImages/Aetna.png";
-import Blue from "../InsuranceImages/Blue.png";
-import Carelon from "../InsuranceImages/Carelon.png";
-import CDPHP from "../InsuranceImages/CDPHP.jpg";
-import EmblemHealth from "../InsuranceImages/EmblemHealth.jpg";
-import Fidelis from "../InsuranceImages/Fidelis.jpg";
-import FirstHealth from "../InsuranceImages/FirstHealth.png";
-import GHI from "../InsuranceImages/GHI.png";
-import HIP from "../InsuranceImages/HIP.jpg";
 import Humana from "../InsuranceImages/Humana.png";
-import MagnaCare from "../InsuranceImages/MagnaCare.png";
+
 import Medicaid from "../InsuranceImages/Medicaid.jpg";
 import Medicare from "../InsuranceImages/Medicare.jpg";
-import Meritain from "../InsuranceImages/Meritain.png";
-import Northwell from "../InsuranceImages/Northwell.png";
-import NYSHIP from "../InsuranceImages/NYSHIP.png";
-import Optum from "../InsuranceImages/Optum.png";
-import Oscar from "../InsuranceImages/Oscar.png";
-import UMR from "../InsuranceImages/UMR.png";
-
+import cigna from "../InsuranceImages/Cigna.jpg";
+import united from "../InsuranceImages/unitedhealth.png";
+import molina from "../InsuranceImages/molina.png";
+import wellpoint from "../InsuranceImages/molina.png";
+import wellcare from "../InsuranceImages/wellcare.png";
+import triwest from "../InsuranceImages/triwest.png";
+import superior from "../InsuranceImages/superios.png";
 export default function InsuranceAccepted() {
   const insurances = [
-    { name: "Aetna", logo: atena },
-    { name: "Blue Cross / Blue Shield", logo: Blue },
-    { name: "Carelon Behavioral Health", logo: Carelon },
-    { name: "CDPHP", logo: CDPHP },
-    { name: "EmblemHealth", logo: EmblemHealth },
-    { name: "Fidelis Care", logo: Fidelis },
-    { name: "First Health", logo: FirstHealth },
-    { name: "GHI (Group Health Incorporated)", logo: GHI },
-    { name: "HIP (Health Plan of New York)", logo: HIP },
+    { name: "United", logo: united },
+    { name: "Molina", logo: molina },
+    { name: "Wellpoint", logo: wellpoint },
+    { name: "wellcare", logo: wellcare },
+    { name: "Triwest", logo: triwest },
     { name: "Humana", logo: Humana },
-    { name: "MagnaCare", logo: MagnaCare },
     { name: "Medicaid", logo: Medicaid },
     { name: "Medicare", logo: Medicare },
-    { name: "Meritain Health", logo: Meritain },
-    { name: "Northwell Direct", logo: Northwell },
-    { name: "NYSHIP (NY State Empire Plan)", logo: NYSHIP },
-    { name: "Optum", logo: Optum },
-    { name: "Oscar Health", logo: Oscar },
-    { name: "UMR (United Medical Resources)", logo: UMR },
+    { name: "Cigna", logo: cigna },
+    { name: "Superios", logo: superior },
   ];
   const scrollingLogos = [...insurances, ...insurances];
 

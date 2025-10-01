@@ -62,9 +62,14 @@ export default function HomeCarousel() {
             Find Out Here
           </button>
         </div>
-        <p className="text-white text-2xl max-w-2xl mt-6">
-          First Choice Wellness Clinic is opened for telehealth visits.
+        <p className="text-white text-2xl max-w-2xl mt-6 mb-6">
+          We are accepting new patients
         </p>
+        <div className="flex flex-wrap gap-4 ">
+          <button className="px-6 py-3 bg-[#0028a5] text-lg  text-white rounded-full font-semibold hover:bg-blue-800 cursor-pointer transition">
+            Book Appointment
+          </button>
+        </div>
       </div>
     </div>
   );

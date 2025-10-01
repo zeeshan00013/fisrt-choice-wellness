@@ -9,16 +9,17 @@ export default function WoundCarePage() {
     <main className="min-h-screen bg-white text-gray-800">
       <Image
         src={bannerImg}
-        alt="Services Banner"
+        alt="Wellness Banner"
         className="w-full md:h-[500px] md:object-cover"
         priority
       />
 
       <div className="bg-[#1C2A64] py-6">
         <h1 className="text-white text-center text-3xl md:text-5xl">
-          Wound Care
+          Wellness
         </h1>
       </div>
+
       <div className="max-w-7xl mx-auto space-y-6 mt-5 w-full px-8">
         <div className="border-b border-dashed py-4 text-xl">
           <Link
@@ -34,38 +35,36 @@ export default function WoundCarePage() {
           >
             Services
           </Link>{" "}
-          &raquo; <span className="text-gray-950 ">Wound Care</span>
+          &raquo; <span className="text-gray-950">Wellness</span>
         </div>
       </div>
+
       {/* Main content */}
       <section className="max-w-7xl mx-auto space-y-6 mt-5 w-full px-8">
         <h2 className="text-xl sm:text-3xl font-medium text-gray-900 text-center">
-          Get specialized attention for optimal healing and recovery.
+          Empower your health through personalized wellness solutions.
         </h2>
 
         <p className="text-lg text-black font-[400]">
-          Effective wound care is essential for promoting healing and preventing
-          complications. Our skilled team of healthcare professionals is
-          dedicated to providing comprehensive wound management services
-          tailored to your specific needs. We utilize the latest techniques and
-          treatments to ensure wounds heal properly, whether from surgery,
-          injury, or chronic conditions. By taking a holistic approach, we
-          assess the wound and underlying health factors that may impact the
-          healing process.
+          At First Choice Wellness Clinic, our holistic wellness services are
+          designed to support your overall physical, mental, and emotional
+          well-being. Our dedicated healthcare professionals provide
+          personalized care tailored to your lifestyle and health goals. Whether
+          you're managing a chronic condition, aiming to boost energy, or
+          striving for long-term health, our approach addresses the root causes,
+          not just symptoms.
         </p>
 
         <p className="text-lg text-black font-[400]">
-          Our wound care services include thorough assessments, debridement,
-          dressing changes, and education on proper wound care at home. We
-          prioritize patient comfort and strive to create a supportive
-          environment to empower you to participate in your healing journey.
-          Additionally, we provide guidance on lifestyle modifications and
-          preventive measures to reduce the risk of future wounds. At
+          Our wellness services include health assessments, lifestyle coaching,
+          nutrition guidance, stress management, and preventive care strategies.
+          We work closely with you to create sustainable habits that promote
+          lasting well-being. At{" "}
           <span className="font-semibold text-[#1C2D5A]">
-            First Choice Wellness Clinic.
+            First Choice Wellness Clinic
           </span>
-          our commitment to compassionate care ensures you receive the highest
-          quality of service as you work toward recovery.
+          , we believe true wellness is a journey, and we’re here to support you
+          every step of the way.
         </p>
 
         {/* Contact Section */}
@@ -74,16 +73,15 @@ export default function WoundCarePage() {
             Connect With Us
           </h4>
           <p className="text-lg text-black font-[400] mt-4">
-            Take charge of your health today!
+            Ready to prioritize your wellness?
             <Link
               href="/contact"
               className="text-blue-600 hover:underline font-medium"
             >
               Contact us
             </Link>{" "}
-            to schedule your appointment and receive compassionate,
-            comprehensive care tailored just for you—don’t wait. Your wellness
-            journey starts now!
+            today to schedule your consultation and take the first step toward a
+            healthier, more vibrant life.
           </p>
         </div>
       </section>
