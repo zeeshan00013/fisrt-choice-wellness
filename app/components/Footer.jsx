@@ -44,10 +44,10 @@ const Footer = () => {
                 <ul className="mt-2 space-y-2">
                   <li>
                     <Link
-                      href="/wound-care"
+                      href="/wellness"
                       className="transition-colors duration-300  hover:text-teal-accent-400 flex  items-center gap-2"
                     >
-                      <AiOutlineCaretRight /> Wound Care
+                      <AiOutlineCaretRight /> Wellness
                     </Link>
                   </li>
                   <li>
