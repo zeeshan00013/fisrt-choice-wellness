@@ -12,7 +12,7 @@ const manrope = Manrope({
 export const metadata = {
   metadataBase: new URL("https://www.1stchoicewellnessclinic.com/"),
   keywords: [
-    "1st Choice Wellness Clinic",
+    "First Choice Wellness Clinic",
     "Wellness Clinic USA",
     "Primary Care Services",
     "Family Medicine Clinic",
@@ -24,16 +24,16 @@ export const metadata = {
   ],
   title: {
     default:
-      "1st Choice Wellness Clinic - Your Trusted Partner in Health & Wellness",
-    template: "%s | 1st Choice Wellness Clinic",
+      "First Choice Wellness Clinic - Your Trusted Partner in Health & Wellness",
+    template: "%s | First Choice Wellness Clinic",
   },
   description:
-    "1st Choice Wellness Clinic provides comprehensive healthcare and wellness services. From preventive care to chronic disease management, our team is committed to your health and well-being.",
-  author: "1st Choice Wellness Clinic",
+    "First Choice Wellness Clinic provides comprehensive healthcare and wellness services. From preventive care to chronic disease management, our team is committed to your health and well-being.",
+  author: "First Choice Wellness Clinic",
 
   openGraph: {
     title:
-      "1st Choice Wellness Clinic - Comprehensive Health & Wellness Services",
+      "First Choice Wellness Clinic - Comprehensive Health & Wellness Services",
     description:
       "Discover personalized healthcare at 1st Choice Wellness Clinic. We provide family medicine, preventive care, chronic disease management, and holistic wellness solutions.",
     url: "https://www.1stchoicewellnessclinic.com",
@@ -42,7 +42,7 @@ export const metadata = {
         url: "https://www.1stchoicewellnessclinic.com/Images/team.webp",
         width: 1200,
         height: 630,
-        alt: "1st Choice Wellness Clinic Banner",
+        alt: "First Choice Wellness Clinic Banner",
       },
     ],
     type: "website",
@@ -50,7 +50,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     site: "@yourtwitterhandle",
-    title: "1st Choice Wellness Clinic",
+    title: "First Choice Wellness Clinic",
     description:
       "Your trusted partner in health and wellness. Visit 1st Choice Wellness Clinic for primary care, preventive medicine, and holistic healthcare services.",
     images: ["https://www.1stchoicewellnessclinic.com/Images/about-data.jpg"],
@@ -71,7 +71,7 @@ export default function RootLayout({ children }) {
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Organization",
-              name: "RCM Expert Consultants",
+              name: "First choice Wellness Clinic",
               url: "https://www.1stchoicewellnessclinic.com",
               sameAs: [],
               contactPoint: {
