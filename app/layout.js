@@ -28,7 +28,7 @@ export const metadata = {
     template: "%s | First Choice Wellness Clinic",
   },
   description:
-    "First Choice Wellness Clinic provides comprehensive healthcare and wellness services. From preventive care to chronic disease management, our team is committed to your health and well-being.",
+    "First Choice Wellness Clinic is dedicated to your health. Our expert team offers personalized, comprehensive care to support your wellness journey.",
   author: "First Choice Wellness Clinic",
 
   openGraph: {
