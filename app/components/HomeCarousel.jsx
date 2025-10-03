@@ -6,6 +6,7 @@ import img2 from "../Images/ca4.jpg";
 import img3 from "../Images/ca3.jpg";
 import img4 from "../Images/ca6.jpg";
 import img5 from "../Images/ca7.jpg";
+import Link from "next/link";
 
 const slides = [
   {
@@ -58,17 +59,31 @@ export default function HomeCarousel() {
           healthcare services tailored to your unique needs.
         </p>
         <div className="flex flex-wrap gap-4 ">
-          <button className="px-6 py-3 bg-[#0028a5] text-lg  text-white rounded-full font-semibold hover:bg-blue-800 cursor-pointer transition">
-            Find Out Here
-          </button>
+          <Link
+            target="_blank"
+            href={
+              "https://patientkiosk.omnimd.com/#/urgent-care/clinic-check-in/U2FsdGVkX19qMlivuMUIll8GyyqU3jNlDwWDT2dzc2c="
+            }
+          >
+            <button className="px-6 py-3 bg-[#0028a5] text-lg  text-white rounded-full font-semibold hover:bg-blue-800 cursor-pointer transition">
+              Find Out Here
+            </button>
+          </Link>
         </div>
         <p className="text-white text-2xl max-w-2xl mt-6 mb-6">
           We are accepting new patients
         </p>
         <div className="flex flex-wrap gap-4 ">
-          <button className="px-6 py-3 bg-[#0028a5] text-lg  text-white rounded-full font-semibold hover:bg-blue-800 cursor-pointer transition">
-            Book Appointment
-          </button>
+          <Link
+            target="_blank"
+            href={
+              "https://patientkiosk.omnimd.com/#/urgent-care/clinic-check-in/U2FsdGVkX19qMlivuMUIll8GyyqU3jNlDwWDT2dzc2c="
+            }
+          >
+            <button className="px-6 py-3 bg-[#0028a5] text-lg  text-white rounded-full font-semibold hover:bg-blue-800 cursor-pointer transition">
+              Book Appointment
+            </button>
+          </Link>
         </div>
       </div>
     </div>

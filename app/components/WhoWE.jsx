@@ -49,7 +49,12 @@ const WhoWeAre = () => {
             healthier, more vibrant life.
           </p>
 
-          <Link href={"/contact"}>
+          <Link
+            target="_blank"
+            href={
+              "https://patientkiosk.omnimd.com/#/urgent-care/clinic-check-in/U2FsdGVkX19qMlivuMUIll8GyyqU3jNlDwWDT2dzc2c="
+            }
+          >
             <button className="bg-[#0020a6]  text-white px-6 py-2 rounded-md cursor-pointer hover:bg-[#0a30c9] transition">
               Call Us
             </button>

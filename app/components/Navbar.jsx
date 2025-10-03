@@ -38,17 +38,32 @@ export default function Navbar() {
         <div className="hidden md:flex flex-col items-end gap-4 w-full p-4 px-8">
           {/* Top Buttons */}
           <div className="text-white space-x-3">
-            <Link href={"/contact"}>
+            <Link
+              target="_blank"
+              href={
+                "https://patientkiosk.omnimd.com/#/urgent-care/clinic-check-in/U2FsdGVkX19qMlivuMUIll8GyyqU3jNlDwWDT2dzc2c="
+              }
+            >
               <button className="bg-[#0020a6] py-3 px-6 rounded-2xl  cursor-pointer hover:bg-[#1733a5]">
                 Paitent Check In
               </button>
             </Link>
-            <Link href={"/contact"}>
+            <Link
+              target="_blank"
+              href={
+                "https://patientkiosk.omnimd.com/#/urgent-care/clinic-check-in/U2FsdGVkX19qMlivuMUIll8GyyqU3jNlDwWDT2dzc2c="
+              }
+            >
               <button className="bg-[#0020a6] cursor-pointer hover:bg-[#1733a5] py-3 px-6 rounded-2xl ">
                 Book Appointment
               </button>
             </Link>
-            <Link href={"/contact"}>
+            <Link
+              target="_blank"
+              href={
+                "https://patientkiosk.omnimd.com/#/urgent-care/clinic-check-in/U2FsdGVkX19qMlivuMUIll8GyyqU3jNlDwWDT2dzc2c="
+              }
+            >
               <button className="bg-[#0020a6] cursor-pointer hover:bg-[#1733a5] py-3 px-6 rounded-2xl">
                 Call Us
               </button>

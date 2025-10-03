@@ -35,6 +35,7 @@ export default function Hero() {
           <p className="text-xs font-semibold mt-2 px-2">
             Meet Our Professionals
           </p>
+
           <button className="mt-2 p-1.5 rounded-full bg-[#1A237E] text-white">
             <FaArrowRight size={14} />
           </button>
