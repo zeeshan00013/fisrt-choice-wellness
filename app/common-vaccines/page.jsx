@@ -67,7 +67,7 @@ export default function CommonVaccinesPage() {
           health and well-being. By staying up-to-date with vaccinations, you
           protect yourself and help prevent the spread of infectious diseases
           within our community. At
-          <span className="font-semibold text-[#1C2D5A]">
+          <span className="font-semibold text-[#1C2D5A] m-1">
             First Choice Wellness Clinic.
           </span>
           we are committed to providing accessible and comprehensive vaccine
@@ -83,7 +83,7 @@ export default function CommonVaccinesPage() {
             Take charge of your health today!
             <Link
               href="/contact"
-              className="text-blue-600 hover:underline font-medium"
+              className="text-blue-600 hover:underline font-medium m-1"
             >
               Contact us
             </Link>{" "}

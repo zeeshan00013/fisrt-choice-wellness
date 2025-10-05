@@ -59,7 +59,7 @@ export default function WeightLossPage() {
           the tools and knowledge necessary to maintain a healthy weight
           long-term. Through regular check-ins and progress assessments, we
           ensure you stay motivated and on track. At
-          <span className="font-semibold text-[#1C2D5A]">
+          <span className="font-semibold text-[#1C2D5A] m-1">
             First Choice Wellness Clinic.
           </span>
           we believe that successful weight management is about creating lasting
@@ -75,7 +75,7 @@ export default function WeightLossPage() {
             Take charge of your health today!
             <Link
               href="/contact"
-              className="text-blue-600 hover:underline font-medium"
+              className="text-blue-600 hover:underline font-medium m-1"
             >
               Contact us
             </Link>{" "}

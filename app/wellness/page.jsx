@@ -60,7 +60,7 @@ export default function WoundCarePage() {
           nutrition guidance, stress management, and preventive care strategies.
           We work closely with you to create sustainable habits that promote
           lasting well-being. At{" "}
-          <span className="font-semibold text-[#1C2D5A]">
+          <span className="font-semibold text-[#1C2D5A] m-1">
             First Choice Wellness Clinic
           </span>
           , we believe true wellness is a journey, and we’re here to support you
@@ -76,7 +76,7 @@ export default function WoundCarePage() {
             Ready to prioritize your wellness?
             <Link
               href="/contact"
-              className="text-blue-600 hover:underline font-medium"
+              className="text-blue-600 hover:underline font-medium m-1"
             >
               Contact us
             </Link>{" "}

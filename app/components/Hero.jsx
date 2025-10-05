@@ -4,6 +4,7 @@ import { FaArrowRight } from "react-icons/fa6";
 import doctor from "../../public/man1.webp";
 import circledr from "../../public/back.webp";
 import { FaPeopleGroup } from "react-icons/fa6";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -27,19 +28,25 @@ export default function Hero() {
             />
           </div>
         </div>
+        <Link
+          target="_blank"
+          href={
+            "https://patientkiosk.omnimd.com/#/urgent-care/clinic-check-in/U2FsdGVkX19qMlivuMUIll8GyyqU3jNlDwWDT2dzc2c="
+          }
+        >
+          <div className="absolute bottom-28  -right-[15%] transform -translate-x-1/2 w-36 h-36 bg-white rounded-full shadow-lg flex flex-col items-center justify-center text-center z-20">
+            <div className="text-blue-800">
+              <FaPeopleGroup size={50} />
+            </div>
+            <p className="text-xs font-semibold mt-2 px-2">
+              Meet Our Professionals
+            </p>
 
-        <div className="absolute bottom-28  -right-[15%] transform -translate-x-1/2 w-36 h-36 bg-white rounded-full shadow-lg flex flex-col items-center justify-center text-center z-20">
-          <div className="text-blue-800">
-            <FaPeopleGroup size={50} />
+            <button className="mt-2 p-1.5 rounded-full bg-[#1A237E] text-white">
+              <FaArrowRight size={14} />
+            </button>
           </div>
-          <p className="text-xs font-semibold mt-2 px-2">
-            Meet Our Professionals
-          </p>
-
-          <button className="mt-2 p-1.5 rounded-full bg-[#1A237E] text-white">
-            <FaArrowRight size={14} />
-          </button>
-        </div>
+        </Link>
       </div>
 
       {/* Right text section */}

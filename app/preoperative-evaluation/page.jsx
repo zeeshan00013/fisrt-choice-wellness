@@ -62,7 +62,7 @@ export default function PreoperativeEvaluationPage() {
           needs, promoting the best possible recovery. We also provide guidance
           on what to expect before, during, and after your procedure, helping to
           alleviate any concerns you may have. At
-          <span className="font-semibold text-[#1C2D5A]">
+          <span className="font-semibold text-[#1C2D5A] m-1">
             First Choice Wellness Clinic.
           </span>
           we support you every step of the way, ensuring you feel confident and
@@ -78,7 +78,7 @@ export default function PreoperativeEvaluationPage() {
             Take charge of your health today!
             <Link
               href="/contact"
-              className="text-blue-600 hover:underline font-medium"
+              className="text-blue-600 hover:underline font-medium m-1"
             >
               Contact us
             </Link>{" "}

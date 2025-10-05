@@ -64,7 +64,7 @@ export default function MenHealthServicesPage() {
           maintain a healthy lifestyle. We aim to create a partnership with our
           patients, ensuring they receive the support and care they need to
           thrive. At
-          <span className="font-semibold text-[#1C2D5A]">
+          <span className="font-semibold text-[#1C2D5A] m-1">
             First Choice Wellness Clinic.
           </span>
           we are committed to helping men achieve their health goals and improve
@@ -80,7 +80,7 @@ export default function MenHealthServicesPage() {
             Take charge of your health today!
             <Link
               href="/contact"
-              className="text-blue-600 hover:underline font-medium"
+              className="text-blue-600 hover:underline font-medium m-1"
             >
               Contact us
             </Link>{" "}

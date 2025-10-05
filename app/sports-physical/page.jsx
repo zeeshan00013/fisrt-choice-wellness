@@ -64,7 +64,7 @@ export default function SportsPhysicalPage() {
           regarding their health and sports participation. With flexible
           scheduling options, we make getting the necessary evaluation easy
           before the season starts. At
-          <span className="font-semibold text-[#1C2D5A]">
+          <span className="font-semibold text-[#1C2D5A] m-1">
             First Choice Wellness Clinic.
           </span>
           we are committed to fostering a safe and healthy sports experience for
@@ -80,7 +80,7 @@ export default function SportsPhysicalPage() {
             Take charge of your health today!
             <Link
               href="/contact"
-              className="text-blue-600 hover:underline font-medium"
+              className="text-blue-600 hover:underline font-medium m-1"
             >
               Contact us
             </Link>{" "}

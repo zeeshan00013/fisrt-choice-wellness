@@ -65,7 +65,7 @@ export default function AnnualPhysicalPage() {
           your health status and any follow-up steps needed. Whether you’re
           maintaining a healthy lifestyle or managing a chronic condition, our
           team is dedicated to supporting you every step of the way. At
-          <span className="font-semibold text-[#1C2D5A]">
+          <span className="font-semibold text-[#1C2D5A] m-1">
             First Choice Wellness Clinic.
           </span>
           we are committed to helping you achieve and maintain optimal health
@@ -81,7 +81,7 @@ export default function AnnualPhysicalPage() {
             Take charge of your health today!
             <Link
               href="/contact"
-              className="text-blue-600 hover:underline font-medium"
+              className="text-blue-600 hover:underline font-medium m-1"
             >
               Contact us
             </Link>{" "}

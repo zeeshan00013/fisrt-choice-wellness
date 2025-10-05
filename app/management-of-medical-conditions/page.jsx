@@ -65,7 +65,7 @@ export default function ManagementOfMedicalConditions() {
           supported and informed. We offer guidance, resources, and strategies
           that help you make positive lifestyle changes and manage your
           condition effectively. At{" "}
-          <span className="font-semibold text-[#1C2D5A]">
+          <span className="font-semibold text-[#1C2D5A] m-1">
             First Choice Wellness Clinic
           </span>
           , your health is our priority, and we are committed to walking
@@ -121,7 +121,7 @@ export default function ManagementOfMedicalConditions() {
             Take charge of your health today!{" "}
             <Link
               href="/contact"
-              className="text-blue-600 hover:underline font-medium"
+              className="text-blue-600 hover:underline font-medium m-1"
             >
               Contact us
             </Link>{" "}

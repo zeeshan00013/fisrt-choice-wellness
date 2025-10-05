@@ -62,7 +62,7 @@ export default function MedicationRefillPage() {
           encourage you to contact our team for assistance. Our goal is to make
           the medication refill process as hassle-free as possible, enabling you
           to focus on what matters most—your health and well-being. At
-          <span className="font-semibold text-[#1C2D5A]">
+          <span className="font-semibold text-[#1C2D5A] m-1">
             First Choice Wellness Clinic.
           </span>
           your care is our priority, and we are committed to supporting you
@@ -78,7 +78,7 @@ export default function MedicationRefillPage() {
             Take charge of your health today!
             <Link
               href="/contact"
-              className="text-blue-600 hover:underline font-medium"
+              className="text-blue-600 hover:underline font-medium m-1"
             >
               Contact us
             </Link>{" "}

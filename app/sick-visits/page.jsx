@@ -62,7 +62,7 @@ export default function SickVisitsPage() {
           appointment options that fit your schedule. With a focus on efficient
           care and effective treatment, we aim to help you return to your daily
           activities quickly. At
-          <span className="font-semibold text-[#1C2D5A]">
+          <span className="font-semibold text-[#1C2D5A] m-1">
             First Choice Wellness Clinic.
           </span>
           your health is our top priority, and we are dedicated to providing the
@@ -78,7 +78,7 @@ export default function SickVisitsPage() {
             Take charge of your health today!
             <Link
               href="/contact"
-              className="text-blue-600 hover:underline font-medium"
+              className="text-blue-600 hover:underline font-medium m-1"
             >
               Contact us
             </Link>{" "}
