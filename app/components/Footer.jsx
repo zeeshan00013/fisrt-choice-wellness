@@ -176,14 +176,19 @@ const Footer = () => {
               </span>
             </p>
             <div className="flex items-center mt-4 space-x-4 sm:mt-0">
-              <Link href={""}>
+              <Link
+                href={"https://www.facebook.com/share/17Xumz1Gxt/"}
+                target="_blank"
+              >
                 <FaFacebook size={30} />
               </Link>
-              <Link href={""}>
+              <Link
+                href={
+                  "https://www.instagram.com/1stchoicewellnessclinic?igsh=MXZjZXZjaXV0cjNqYQ=="
+                }
+                target="_blank"
+              >
                 <FaInstagram size={30} />
-              </Link>
-              <Link href={""}>
-                <FaTwitter size={30} />
               </Link>
             </div>
           </div>

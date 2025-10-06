@@ -1,6 +1,11 @@
 "use client";
 import Image from "next/image";
-import { FaFacebook, FaFacebookF, FaXTwitter } from "react-icons/fa6";
+import {
+  FaFacebook,
+  FaFacebookF,
+  FaInstagram,
+  FaXTwitter,
+} from "react-icons/fa6";
 import logo from "../../public/main-logo.png";
 import Link from "next/link";
 import { useState } from "react";
@@ -81,7 +86,20 @@ export default function Navbar() {
             <div className="flex items-center gap-1">
               Follow Us:{" "}
               <span className="flex items-center gap-1">
-                <FaFacebook size={26} /> <FaXTwitter size={26} />{" "}
+                <Link
+                  href={"https://www.facebook.com/share/17Xumz1Gxt/"}
+                  target="_blank"
+                >
+                  <FaFacebook size={30} />
+                </Link>
+                <Link
+                  href={
+                    "https://www.instagram.com/1stchoicewellnessclinic?igsh=MXZjZXZjaXV0cjNqYQ=="
+                  }
+                  target="_blank"
+                >
+                  <FaInstagram size={30} />
+                </Link>
               </span>
             </div>
           </div>
